@@ -53,7 +53,7 @@
                                 @endif
                             @csrf
                             <div class="form-group">
-                            <label for="inputName">Name</label>
+                            <label for="inputName">@lang('data.name')</label>
                             @if(isset($company))
                               <input type="text" value="{{$company->name}}" name="name" id="inputName" class="form-control">
                                 @else
@@ -69,7 +69,7 @@
                             @endif
                         </div>
                         <div class="form-group">
-                            <label for="inputWebsite">Website</label>
+                            <label for="inputWebsite">@lang('data.website')</label>
                             @if(isset($company))
                             <input type="text" name="website" id="inputWebsite" value="{{$company->website}}" class="form-control">
                                 @else
@@ -77,7 +77,7 @@
                                 @endif
                         </div>
                         <div class="form-group">
-                            <label for="Logo">Company Logo</label>
+                            <label for="Logo">@lang('Nav.company') Logo</label>
                             <div class="input-group">
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" name="logo" id="exampleInputFile">
